@@ -78,13 +78,12 @@ int Lied;         // ausgewähltes Lied
 // **********  Mary has a little lamb ************
 
   const int Noten_1[] PROGMEM = {E5, D5, C5, D5, E5, E5, E5, D5, D5, D5, E5, G5, G5, E5, D5, C5, D5, E5, E5, E5, E5, D5, D5, E5, D5, C5};
-  const int Dauer_1[] PROGMEM = {4,  4,  4,  4,  4,  4,  2,  4,  4,  2,  4,  4,  2,  4,  4,  4,  4,  4,  4,  2,  4,  4,  2,  4,  4,  1};
+  const int Dauer_1[] PROGMEM = {4,  4,  4,  4,  4,  4,  2,  4,  4,  2,  4,  4,  2,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  1};
 
 
-// ************* ABC die Katze lief im Schnee (Seite 263) ************
-
-  const PROGMEM uint16_t Noten_2[] = {D5, F5, A5, pause, B5, A5, G5, F5, E5, D5, pause, A5, G5, F5, E5, D5, C5, D5, E5, A5, G5, F5, E5, D5, C5, D5, E5, D5, E5, A5, pause, AS5, A5, G5, F5, E5, D5};
-  const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     8,  8,  4,  4,  4,  4,  2,     8,  8,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,     8,   8,  4,  4,  4,  4,  4};
+// ************* ABC die Katze lief im Schnee (Seite 263) ************ www.heilpaedagogik-info.de/winterlieder/80-abc-die-katze-lief-im-schnee.html
+  const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, pause, D6, C6, AS5, A5, G5, F5, pause, C6, AS5, A5, G5, F5, E5, F5, G5, C6, AS5, A5, G5, F5, E5, F5, G5, pause, F5, AS5, AS5, AS5, A5, F5, D6, D6, D6, C6, F6, C6, C6, AS5, A5, G5, F5};
+  const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     2,  4,  4 ,  4,  4,  4,  2,     4,  8,   4,  4,  4,  4,  4,  4,  4,  4,   4,  4,  4,  4,  4,  4,  4,     4,  4,   4,    8,  8,  4,  4,  4,  8,  8,  4,  4,  4,  8,   8,  4,  4,  2};
 
 
 // *** Alle meine Entchen ***
@@ -117,10 +116,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Dauer_7[] = {3, 6, 4, 4, 2, 2, 4, 8, 8, 4, 4, 1, 4, 4, 4, 4, 2, 4, 4, 4, 8, 8, 4, 4, 1};
 
 
-// ******* Nr. 8 Ihr Kinderlein kommet **************
+// ******* Nr. 8 Ihr Kinderlein kommet ************** en.wikipedia.org/wiki/ihr_kinderlein,_kommet
 
-  const PROGMEM uint16_t Noten_8[] = {A5,A5,F5,A5,A5,F5,A5,G5,E5,G5,F5,0,A5,A5,F5,A5,A5,F5,A5,G5,E5,G5,F5,0,F5,E5,E5,E5,G5,G5,G5,F5,F5,F5,B5,B5,A5,A5,A5,D6,A5,F5,A5,G5,E5,D5};
-  const PROGMEM uint16_t Dauer_8[] = {4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2,4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2, 4, 2, 4, 4, 2, 4, 4, 2, 4, 4, 2};
+  const PROGMEM uint16_t Noten_8[] = {A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,0,A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,0,FS5,E5,E5,E5,G5,G5,G5,FS5,FS5,FS5,B5,0,B5,A5,A5,A5,D6,A5,FS5,G5,E5,CS5,D5};
+  const PROGMEM uint16_t Dauer_8[] = { 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,4, 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,4,  4, 2, 4, 4, 2, 4, 4,  2,  4,  4, 2,4, 4, 2, 4, 4, 2, 4,  4, 2, 4,  4, 2};
 
 // ******* Nr. 9 Kling Glöckchen **************
 
@@ -196,7 +195,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=11;
+  //Lied=6;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
@@ -356,7 +355,7 @@ void setup() {
 
   }
 
-Anzahl_Noten= Anzahl_Bytes/2;    // Achtung sizeof = Anzahl Bytes nicht Anzahl Variabeln
+Anzahl_Noten= Anzahl_Bytes/sizeof(uint16_t);    // Achtung sizeof = Anzahl Bytes nicht Anzahl Variabeln
 
 Serial.print("Anzahl Noten= ");
 Serial.print(Anzahl_Noten);
@@ -366,7 +365,7 @@ Serial.println(Anzahl_Bytes);
 
 
   if (!Lied==Lied0) {
-    for (int thisNote = 0; thisNote <= Anzahl_Noten-1; thisNote++) {
+    for (int thisNote = 0; thisNote < Anzahl_Noten; thisNote++) {
 
       // to calculate the note duration, take one second divided by the note type.
       //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
@@ -387,7 +386,7 @@ Serial.println(Anzahl_Bytes);
           Serial.print(pauseBetweenNotes);
           Serial.print(" ");
 
-      if (pauseBetweenNotes <0) {
+      if (pauseBetweenNotes < 0) {
         pauseBetweenNotes= 1000;      // Pause bergenzen, fall Fehler im Array
       }
 
@@ -403,11 +402,11 @@ Serial.println(Anzahl_Bytes);
     }
 
     // Wartezeit 6s, damit nicht endlos dudelt (LED blinkt)
-    for (int blinken=1; blinken >6; blinken++) {
-      pinMode(LED_onboard,OUTPUT);
+    for (int blinken=0; blinken < 6; blinken++) {
+      pinMode(LED_onboard, OUTPUT);
       digitalWrite(LED_onboard, LOW);
       delay(500);
-      digitalWrite(LED_onboard,HIGH);
+      digitalWrite(LED_onboard, HIGH);
       delay(500);
     }
 
