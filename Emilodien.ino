@@ -100,16 +100,16 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Dauer_3[] = { 4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1,  4,  4,  4,  4,  1,  4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1};
 
 
-// *** Nr. 4 Kuckuck, Kuckuck, ruft's aus dem Wald   ***
+// *** Nr. 4 Kuckuck, Kuckuck, ruft's aus dem Wald   *** https://www.franzdorfer.com/kuckuck-rufts-aus-dem-wald
 
-  const PROGMEM uint16_t Noten_4[] = {G5, E5, PAUSE, G5, E5, PAUSE, F5, E5, D5, C5, PAUSE, D5, D5, E5, F5, D5, PAUSE, E5, E5, F5, G5, E5, PAUSE, G5, E5, PAUSE, G5, E5, PAUSE, F5, E5, D5, C5, PAUSE};
-  const PROGMEM uint16_t Dauer_4[] = { 4,  4,     8,  4,  4,     8,  4,  4,  4,  2,     8,  4,  4,  4,  2,  4,     8,  4,  4,  4,  2,  4,     8,  4,  4,     8,  4,  4,     8,  4,  4,  4,  2,     8};
+  const PROGMEM uint16_t Noten_4[] = {C6, A5, PAUSE, C6, A5, PAUSE, G5, F5, G5, F5, PAUSE, G5, G5, A5, BM5, G5, A5, A5, BM5, C6, A5, C6, A5, C6, A5, G5, F5, G5, F5, F5};
+  const PROGMEM uint16_t Dauer_4[] = { 4,  4,     4,  4,  4,     4,  4,  4,  4,  2,     4,  4,  4,  4,   2,  4,  4,  4,   4,  2,  4,  2,  4,  2,  4,  4,  4,  4,  2,  4};
 
 
 // ******* Nr. 5 Heidi **************
 
-  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, A5, G5, E5, F5, E5, D5, D5, PAUSE, F5, F5, D6, B5, B5, B5, B5, B5, A5,G5, A5, G5,E5, E5 };
-  const PROGMEM uint16_t Dauer_5[] = { 2,  2,  2,  2,  4,  8,  8,  8,  4,  8,  4,  8,  8,  4,     8,  2,  2,  2,  2,  4,  8,  8,  8,  8, 4,  4,  8, 8, 4};
+  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, G5, E5, F5, E5, D5, D5, PAUSE, F5, D5, D6, B5, B5, B5, B5, A5,G5, A5, G5,E5, E5};
+  const PROGMEM uint16_t Dauer_5[] = { 2,  2,  2,  2,  4,  8,  4,  4,  8,  4,  8,  8,  4,     4,  2,  2,  2,  2,  4,  8,  4,  8, 4,  4,  8, 8,  4};
 
 
 // ******* Nr. 6 Der Kuckuck und der Esel **************
@@ -203,7 +203,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=19;
+  //Lied=6;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
