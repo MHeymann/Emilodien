@@ -20,60 +20,68 @@ HW siehe Fritzing Schaltplan
     9 Morgen kommt der Weihnachtsmann
     10 Weihnachtsbäckerei
     11 Nickolaus ist ein guter Mann
-    12
+
+    12 Advent, Advent
+    13 Leise rieselt der Schnee
+    14 Lasst uns froh und munter sein
+    15 Schneeflöckchen Weißröckchen
+    16 Am Weihnachtsbaum die Lichter brennen
+    17 O Tannenbaum
+    18 Morgen Kinder wirds was geben
+    19 O du fröhliche
 
 */
 
-#include "Noten_min.h"    // nur 3 Oktaven
+#include "Noten_min.h"      // nur 3 Oktaven
 
-#define pause 0         // Pausenzeichen
+#define PAUSE             0 // Pausenzeichen
 
-#define Analog0 0          // Analog Eingang für Rauschen Zufallszahl
+#define Analog0           0 // Analog Eingang für Rauschen Zufallszahl
 
 
 #define Selbstabschaltung 2 // PD2 für Transistor Abschaltung
-#define Buzzer 3            // PD3 als Ansteuerung für passiven Buzzer
-#define Soundmodul 4        // PD4 externes Soundmodul ISD1820
+#define Buzzer            3 // PD3 als Ansteuerung für passiven Buzzer
+#define Soundmodul        4 // PD4 externes Soundmodul ISD1820
 
-#define LED_onboard 13      // LED
+#define LED_onboard       13 // LED
 
-#define Lied0 0    // Sound Modul
-#define Lied1 1    // Lied
-#define Lied2 2    // Lied
-#define Lied3 3    // Lied
-#define Lied4 4    // Lied
-#define Lied5 5    // Lied
-#define Lied6 6    // Lied
-#define Lied7 7    // Lied
-#define Lied8 8    // Lied
-#define Lied9 9    // Lied
-#define Lied10 10    // Lied
-#define Lied11 11    // Lied
-#define Lied12 12    // Lied
-#define Lied13 13    // Lied
-#define Lied14 14    // Lied
-#define Lied15 15    // Lied
-#define Lied16 16    // Lied
-#define Lied17 17    // Lied
-#define Lied18 18    // Lied
-#define Lied19 19    // Lied
-#define Anzahl_Lieder 19  // Anzahl für Auswahl über Zufallszahl Generator
+#define Lied0                                 0    // Sound Modul
+#define MARY_HAD_A_LITTLE_LAMB                1    // Lied
+#define ABC_DIE_KATZE_LIEF                    2    // Lied
+#define ALLE_MEINE_ENTCHEN                    3    // Lied
+#define KUCKUCK_KUCKUCK                       4    // Lied
+#define HEIDI                                 5    // Lied
+#define KUCKUCK_UND_ESEL                      6    // Lied
+#define ALLE_JAHRE_WIEDER                     7    // Lied
+#define IHR_KINDERLEIN_KOMMET                 8    // Lied
+#define KLING_GLOECKCHEN                      9    // Lied
+#define WEIHNACHTSBAECKEREI                   10    // Lied
+#define NICKOLAUS_IST_EIN_GUTER               11    // Lied
+#define ADVENT_ADVENT                         12    // Lied
+#define LEISE_RIESELT_DER_SCHNEE              13    // Lied
+#define LASST_UNS_FROH_UND_MUNTER_SEIN        14    // Lied
+#define SCHNEEFLOECKCHEN_WEISSROECKCHEN       15    // Lied
+#define AM_WEIHNACHTSBAUM_DIE_LICHTER_BRENNEN 16    // Lied
+#define O_TANNENBAUM                          17    // Lied
+#define MORGEN_KINDER_WIRDS_WAS_GEBEN         18    // Lied
+#define O_DU_FROELICHE                        19    // Lied
+
+#define ANZAHL_LIEDER                         19  // Anzahl für Auswahl über Zufallszahl Generator
 
 int Zufallszahl;
 
 int Blinken;    // LED onboard blinken
 
-#define MaxToene 60   // Begrenzung für array
+#define MAXTOENE 60   // Begrenzung für array
 
-int melody[MaxToene];
-int noteDurations[MaxToene];
-//int noteAbstand[MaxToene];
+int melody[MAXTOENE];
+int noteDurations[MAXTOENE];
+//int noteAbstand[MAXTOENE];
 
 int Anzahl_Bytes;   // Array Länge in Bytes
 int Anzahl_Noten;   // Array Läneg in Variabeln
 
 int Lied;         // ausgewähltes Lied
-
 
 // **********  Mary has a little lamb ************
 
@@ -81,32 +89,32 @@ int Lied;         // ausgewähltes Lied
   const int Dauer_1[] PROGMEM = {4,  4,  4,  4,  4,  4,  2,  4,  4,  2,  4,  4,  2,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  1};
 
 
-// ************* ABC die Katze lief im Schnee (Seite 263) ************ www.heilpaedagogik-info.de/winterlieder/80-abc-die-katze-lief-im-schnee.html
-  const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, pause, D6, C6, AS5, A5, G5, F5, pause, C6, AS5, A5, G5, F5, E5, F5, G5, C6, AS5, A5, G5, F5, E5, F5, G5, pause, F5, AS5, AS5, AS5, A5, F5, D6, D6, D6, C6, F6, C6, C6, AS5, A5, G5, F5};
-  const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     2,  4,  4 ,  4,  4,  4,  2,     4,  8,   4,  4,  4,  4,  4,  4,  4,  4,   4,  4,  4,  4,  4,  4,  4,     4,  4,   4,    8,  8,  4,  4,  4,  8,  8,  4,  4,  4,  8,   8,  4,  4,  2};
+// ************* ABC die Katze lief im Schnee (Seite 263) ************ https://www.lieder-archiv.de/a_b_c_die_katze_lief_im_schnee-notenblatt_100054.html
+  const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, PAUSE, AS5, A5, A5, A5, G5, G5, F5, PAUSE, C6, AS5, A5, G5, F5, E5, F5, G5, C6, AS5, A5, G5, F5, E5, F5, G5, C5, F5, A5, C6, PAUSE, AS5, A5, A5, A5, G5, G5, F5};
+  const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2,     4,  4,   4,  4,  4,  4,  4,  4,  4,  4,   4,  4,  4,  4,  4,  4,  4,  4,  2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2};
 
 
 // *** Alle meine Entchen ***
 
-  const PROGMEM uint16_t Noten_3[] = {C5, D5, E5, F5, G5, G5, pause, A5, A5, A5, A5, G5, pause, A5, A5, A5, A5, G5, pause, F5, F5, F5, F5, E5, E5, pause, D5, D5, D5, D5, C5};
+  const PROGMEM uint16_t Noten_3[] = {C5, D5, E5, F5, G5, G5, PAUSE, A5, A5, A5, A5, G5, PAUSE, A5, A5, A5, A5, G5, PAUSE, F5, F5, F5, F5, E5, E5, PAUSE, D5, D5, D5, D5, C5};
   const PROGMEM uint16_t Dauer_3[] = { 4,  4,  4,  4,  2,  2,    16,  4,  4,  4,  4,  2,    16,  4,  4,  4,  4,  2,     16, 4,  4,  4,  4,  2,  2,    16,  4,  4,  4,  4,  2};
 
 
 // *** Nr. 4 Kuckuck, Kuckuck, ruft's aus dem Wald   ***
 
-  const PROGMEM uint16_t Noten_4[] = {G5, E5, pause, G5, E5, pause, F5, E5, D5, C5, pause, D5, D5, E5, F5, D5, pause, E5, E5, F5, G5, E5, pause, G5, E5, pause, G5, E5, pause, F5, E5, D5, C5, pause};
+  const PROGMEM uint16_t Noten_4[] = {G5, E5, PAUSE, G5, E5, PAUSE, F5, E5, D5, C5, PAUSE, D5, D5, E5, F5, D5, PAUSE, E5, E5, F5, G5, E5, PAUSE, G5, E5, PAUSE, G5, E5, PAUSE, F5, E5, D5, C5, PAUSE};
   const PROGMEM uint16_t Dauer_4[] = { 4,  4,     8,  4,  4,     8,  4,  4,  4,  2,     8,  4,  4,  4,  2,  4,     8,  4,  4,  4,  2,  4,     8,  4,  4,     8,  4,  4,     8,  4,  4,  4,  2,     8};
 
 
 // ******* Nr. 5 Heidi **************
 
-  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, A5, G5, E5, F5, E5, D5, D5, pause, F5, F5, D6, B5, B5, B5, B5, B5, A5,G5, A5, G5,E5, E5 };
+  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, A5, G5, E5, F5, E5, D5, D5, PAUSE, F5, F5, D6, B5, B5, B5, B5, B5, A5,G5, A5, G5,E5, E5 };
   const PROGMEM uint16_t Dauer_5[] = { 2,  2,  2,  2,  4,  8,  8,  8,  4,  8,  4,  8,  8,  4,     8,  2,  2,  2,  2,  4,  8,  8,  8,  8, 4,  4,  8, 8, 4};
 
 
 // ******* Nr. 6 Der Kuckuck und der Esel **************
 
-  const PROGMEM uint16_t Noten_6[] = {C6, A5, C6, A5, C6, AS5, AS5, pause, AS5, G5, AS5, G5, AS5, A5, pause, C6, AS5, A5, A5, A5, A5, AS5, AS5, pause, AS5, A5, G5, G5, G5, G5, A5, A5, pause, F5, F5, G5, A5, AS5, C6, AS5, A5, A5, G5, G5, F5};
+  const PROGMEM uint16_t Noten_6[] = {C6, A5, C6, A5, C6, AS5, AS5, PAUSE, AS5, G5, AS5, G5, AS5, A5, PAUSE, C6, AS5, A5, A5, A5, A5, AS5, AS5, PAUSE, AS5, A5, G5, G5, G5, G5, A5, A5, PAUSE, F5, F5, G5, A5, AS5, C6, AS5, A5, A5, G5, G5, F5};
   const PROGMEM uint16_t Dauer_6[] = { 2,  4,  4,  4,  4,  4,    2,     8,  2,  4,    4,  4,   4,  2,     8,  8,   8,  4,  4,  4,   4,  4,   2,     8,   8,  8,  4,  4,  4,  4,  4,  2,     8,  4,  4,  4,  4,  4,   2,  2,   4,  4,  4,  4,  2};
 
 
@@ -191,11 +199,11 @@ void setup() {
 
 
   randomSeed(analogRead(A0));     // Zufall abhängig von Rauschen auf Analog Eingang
-  Zufallszahl= random(Anzahl_Lieder-1);   // 0.. Anzahl Lieder -1
+  Zufallszahl= random(ANZAHL_LIEDER);   // 0.. Anzahl Lieder -1; random nimmt als Parameter die `Obergrenze des Zufallswerts, exklusiv` (s. https://www.arduino.cc/reference/de/language/functions/random-numbers/random/ )
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=6;
+  //Lied=2;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
@@ -210,7 +218,7 @@ void setup() {
       digitalWrite(Soundmodul,LOW);
     break;
 
-    case Lied1:
+    case MARY_HAD_A_LITTLE_LAMB:
       Anzahl_Bytes=sizeof(Noten_1);
       memcpy_P(melody, Noten_1, Anzahl_Bytes);    // memcpy_P(Ziel, Quelle aus Flash, Anzhal Bytes)
       memcpy_P(noteDurations, Dauer_1, Anzahl_Bytes);
@@ -227,126 +235,126 @@ void setup() {
 
     break;
 
-    case Lied2:
+    case ABC_DIE_KATZE_LIEF:
       Anzahl_Bytes=sizeof(Noten_2);
       memcpy_P(melody, Noten_2, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_2,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_2,Anzahl_Bytes);
       break;
 
-    case Lied3:
+    case ALLE_MEINE_ENTCHEN:
       Anzahl_Bytes=sizeof(Noten_3);    // Achtung sizeof = ANzahl Bytes nicht Anzahl Variabeln
       memcpy_P(melody, Noten_3, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_3,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied4:
+    case KUCKUCK_KUCKUCK:
       Anzahl_Bytes=sizeof(Noten_4);
       memcpy_P(melody, Noten_4, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_4,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_4,Anzahl_Bytes);
     break;
 
-    case Lied5:
+    case HEIDI:
       Anzahl_Bytes=sizeof(Noten_5);
       memcpy_P(melody, Noten_5, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_5,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_5,Anzahl_Bytes);
     break;
 
-    case Lied6:
+    case KUCKUCK_UND_ESEL:
       Anzahl_Bytes=sizeof(Noten_6);
       memcpy_P(melody, Noten_6, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_6,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_6,Anzahl_Bytes);
     break;
 
-    case Lied7:
+    case ALLE_JAHRE_WIEDER:
       Anzahl_Bytes=sizeof(Noten_7);
       memcpy_P(melody, Noten_7, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_7,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied8:
+    case IHR_KINDERLEIN_KOMMET:
       Anzahl_Bytes=sizeof(Noten_8);
       memcpy_P(melody, Noten_8, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_8,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied9:
+    case KLING_GLOECKCHEN:
       Anzahl_Bytes=sizeof(Noten_9);
       memcpy_P(melody, Noten_9, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_9,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied10:
+    case WEIHNACHTSBAECKEREI:
       Anzahl_Bytes=sizeof(Noten_10);
       memcpy_P(melody, Noten_10, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_10,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied11:
+    case NICKOLAUS_IST_EIN_GUTER:
       Anzahl_Bytes=sizeof(Noten_11);
       memcpy_P(melody, Noten_11, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_11,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied12:
+    case ADVENT_ADVENT:
       Anzahl_Bytes=sizeof(Noten_12);
       memcpy_P(melody, Noten_12, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_12,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied13:
+    case LEISE_RIESELT_DER_SCHNEE:
       Anzahl_Bytes=sizeof(Noten_13);
       memcpy_P(melody, Noten_13, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_13,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied14:
+    case LASST_UNS_FROH_UND_MUNTER_SEIN:
       Anzahl_Bytes=sizeof(Noten_14);
       memcpy_P(melody, Noten_14, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_14,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied15:
+    case SCHNEEFLOECKCHEN_WEISSROECKCHEN:
       Anzahl_Bytes=sizeof(Noten_15);
       memcpy_P(melody, Noten_15, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_15,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied16:
+    case AM_WEIHNACHTSBAUM_DIE_LICHTER_BRENNEN:
       Anzahl_Bytes=sizeof(Noten_16);
       memcpy_P(melody, Noten_16, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_16,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied17:
+    case O_TANNENBAUM:
       Anzahl_Bytes=sizeof(Noten_17);
       memcpy_P(melody, Noten_17, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_17,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied18:
+    case MORGEN_KINDER_WIRDS_WAS_GEBEN:
       Anzahl_Bytes=sizeof(Noten_18);
       memcpy_P(melody, Noten_18, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_18,Anzahl_Bytes);
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case Lied19:
+    case O_DU_FROELICHE:
       Anzahl_Bytes=sizeof(Noten_19);
       memcpy_P(melody, Noten_19, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_19,Anzahl_Bytes);
@@ -364,7 +372,7 @@ Serial.print("Bytes=");
 Serial.println(Anzahl_Bytes);
 
 
-  if (!Lied==Lied0) {
+  if (Lied != Lied0) {
     for (int thisNote = 0; thisNote < Anzahl_Noten; thisNote++) {
 
       // to calculate the note duration, take one second divided by the note type.
@@ -375,12 +383,13 @@ Serial.println(Anzahl_Bytes);
       // the note's duration + 30% seems to work well:
       int pauseBetweenNotes = noteDuration * 1.30;
 
-      if (!melody[thisNote]==pause) {     // Note spielen
+      if (melody[thisNote] != PAUSE) {     // Note spielen
         tone(Buzzer, melody[thisNote], noteDuration);
       }
-      else {      // Pause statt Note
-        delay(noteDuration);
-      }
+      // der `pauseBetweenNotes` wird bereits fuer eine Pause sorgen, also waere dieses zu viel
+      //else {      // Pause statt Note
+      //  delay(noteDuration);
+      //}
           Serial.print(thisNote);
           Serial.print("/");
           Serial.print(pauseBetweenNotes);
@@ -399,10 +408,10 @@ Serial.println(Anzahl_Bytes);
 
     Serial.println("");
     Serial.println("Melodie beendet");
-    }
+  }
 
-    // Wartezeit 6s, damit nicht endlos dudelt (LED blinkt)
-    for (int blinken=0; blinken < 6; blinken++) {
+  // Wartezeit 6s, damit nicht endlos dudelt (LED blinkt)
+  for (int blinken=0; blinken > 6; blinken++) {
       pinMode(LED_onboard, OUTPUT);
       digitalWrite(LED_onboard, LOW);
       delay(500);
@@ -410,9 +419,9 @@ Serial.println(Anzahl_Bytes);
       delay(500);
     }
 
-    Serial.println("Wartezeit beendet");
+  Serial.println("Wartezeit beendet");
 
-    digitalWrite(Selbstabschaltung, LOW);  // Batterie Spannung abschalten
+  digitalWrite(Selbstabschaltung, LOW);  // Batterie Spannung abschalten
 
 }
 
