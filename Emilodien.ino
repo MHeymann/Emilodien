@@ -90,14 +90,14 @@ int Lied;         // ausgewähltes Lied
 
 
 // ************* ABC die Katze lief im Schnee (Seite 263) ************ https://www.lieder-archiv.de/a_b_c_die_katze_lief_im_schnee-notenblatt_100054.html
-  const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, PAUSE, AS5, A5, A5, A5, G5, G5, F5, PAUSE, C6, AS5, A5, G5, F5, E5, F5, G5, C6, AS5, A5, G5, F5, E5, F5, G5, C5, F5, A5, C6, PAUSE, AS5, A5, A5, A5, G5, G5, F5};
+  const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, PAUSE, BM5, A5, A5, A5, G5, G5, F5, PAUSE, C6, BM5, A5, G5, F5, E5, F5, G5, C6, BM5, A5, G5, F5, E5, F5, G5, C5, F5, A5, C6, PAUSE, BM5, A5, A5, A5, G5, G5, F5};
   const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2,     4,  4,   4,  4,  4,  4,  4,  4,  4,  4,   4,  4,  4,  4,  4,  4,  4,  4,  2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2};
 
 
-// *** Alle meine Entchen ***
+// *** Alle meine Entchen *** https://www.kleinemusiker.de/alle-meine-entchen/
 
-  const PROGMEM uint16_t Noten_3[] = {C5, D5, E5, F5, G5, G5, PAUSE, A5, A5, A5, A5, G5, PAUSE, A5, A5, A5, A5, G5, PAUSE, F5, F5, F5, F5, E5, E5, PAUSE, D5, D5, D5, D5, C5};
-  const PROGMEM uint16_t Dauer_3[] = { 4,  4,  4,  4,  2,  2,    16,  4,  4,  4,  4,  2,    16,  4,  4,  4,  4,  2,     16, 4,  4,  4,  4,  2,  2,    16,  4,  4,  4,  4,  2};
+  const PROGMEM uint16_t Noten_3[] = {C5, D5, E5, F5, G5, G5, A5, A5, A5, A5, G5, A5, A5, A5, A5, G5, F5, F5, F5, F5, E5, E5, G5, G5, G5, G5, C5};
+  const PROGMEM uint16_t Dauer_3[] = { 4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1,  4,  4,  4,  4,  1,  4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1};
 
 
 // *** Nr. 4 Kuckuck, Kuckuck, ruft's aus dem Wald   ***
@@ -203,7 +203,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=2;
+  //Lied=19;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
