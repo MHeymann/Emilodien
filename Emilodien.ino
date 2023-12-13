@@ -17,9 +17,9 @@ HW siehe Fritzing Schaltplan
     8 Ihr Kinderlein kommet
     9 Kling Glöckchen
 
-    9 Morgen kommt der Weihnachtsmann
     10 Weihnachtsbäckerei
-    11 Nickolaus ist ein guter Mann
+    11 Morgen kommt der Weihnachtsmann
+    ?11 Nickolaus ist ein guter Mann
 
     12 Advent, Advent
     13 Leise rieselt der Schnee
@@ -203,7 +203,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=6;
+  //Lied=9;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
