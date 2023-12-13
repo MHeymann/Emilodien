@@ -118,7 +118,7 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Dauer_6[] = { 4,  4,  4,  4,  4,   4,   4,     4,   4,  4,   4,  4,   4,  2,     4,  8,   8,  4,  4,  4,  4,   4,   4,     4,   8,  8,  4,  4,  4,  4,  4,  4,     4,  4,  4,  4,  4,   4,  4,  8,  8,  4,   4,  4,  4,  4,  4,  2};
 
 
-// ******* Nr. 7 Alle Jahre wieder **************
+// ******* Nr. 7 Alle Jahre wieder ************** https://www.lieder-archiv.de/alle_jahre_wieder-notenblatt_200009.html
 
   const PROGMEM uint16_t Noten_7[] = {A5, A5, B5, A5, G5, FS5, E5, D5, E5, FS5, G5, FS5, E5, E5, PAUSE, FS5, A5, B5, A5, D6, CS6, B5, A5, G5, FS5, G5, A5, FS5, FS5};
   const PROGMEM uint16_t Dauer_7[] = { 4,  8,  8,  4,  4,   2,  2,  4,  8,   8,  4,   4,  2,  4,     4,   4,  4,  4,  4,  2,   4,  4,  4,  8,   8,  4,  4,   2,   1};
