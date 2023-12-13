@@ -133,10 +133,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_9[] = {C6,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5,PAUSE,G5,G5,A5,F5,A5,G5,PAUSE,B5,B5,C6,G5,B5,A5,PAUSE,G5,G5,A5,AS5,C6,G5,PAUSE,A5,D6,C6,AS5,D6,C6}; //,PAUSE,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5};
   const PROGMEM uint16_t Dauer_9[] = {2,  4, 4, 6, 6, 6, 6, 2,    8, 2, 4, 4, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4,  4, 2, 4,    8, 2, 4, 4,  4, 2, 4}; //,     4,4, 4, 6, 6, 6, 6, 2,     4,2, 4, 4, 2};
 
-// ******* Nr. 10 Weinachtsbäckerei **************
+// ******* Nr. 10 Weinachtsbäckerei ************** https://musescore.com/user/27319323/scores/4864383
 
-  const PROGMEM uint16_t Noten_10[] = {G4,F5,E5,E5,D5,D5,C5,PAUSE,D5,E5,F5,F5,E5,E5,D5,PAUSE,D5,E5,F5,F5,G5,PAUSE,D5,E5,F5,F5,G5,PAUSE,G5,F5,E5,E5,G5,G5,D5,D5,G5,PAUSE,G5,F5,E5,E5,D5,D5,C5};
-  const PROGMEM uint16_t Dauer_10[] = {3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_10[] = {G4, G4, F5, E5, E5, D5, D5, C5, C5, D5, D5, E5, F5, F5, E5, E5, D5, D5, D5, D5, E5, F5, F5, G5, D5, D5, E5, F5, F5, G5, G5, G5, F5, E5, E5, G5, G5, D5, D5, G5, G5, G5, F5, E5, E5, D5, D5, C5, A5, A5, F5, E5, E5, D5, D5, C5, C5};
+  const PROGMEM uint16_t Dauer_10[] = { 8, 16, 16,  4,  4,  4,  4,  2,  4,  8, 16, 16,  4,  4,  4,  4,  2,  4,  8, 16, 16,  4,  4,  4,  8, 16, 16,  4,  4,  4,  8, 16, 16,  4,  4,  4,  4,  4,  4,  4,  8, 16, 16,  4,  4,  4,  4,  2,  4,  8,  8,  4,  4,  4,  4,  2,  4};
 
 // ******* Nr. 11 Morgen kommt der Weinachtsmann **************
 
