@@ -112,77 +112,77 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Dauer_5[] = { 2,  2,  2,  2,  4,  8,  8,  8,  4,  8,  4,  8,  8,  4,     8,  2,  2,  2,  2,  4,  8,  8,  8,  8, 4,  4,  8, 8, 4};
 
 
-// ******* Nr. 6 Der Kuckuck und der Esel **************
+// ******* Nr. 6 Der Kuckuck und der Esel ************** https://www.heilpaedagogik-info.de/tierlieder/1774-der-kuckuck-und-der-esel.html
 
-  const PROGMEM uint16_t Noten_6[] = {C6, A5, C6, A5, C6, AS5, AS5, PAUSE, AS5, G5, AS5, G5, AS5, A5, PAUSE, C6, AS5, A5, A5, A5, A5, AS5, AS5, PAUSE, AS5, A5, G5, G5, G5, G5, A5, A5, PAUSE, F5, F5, G5, A5, AS5, C6, AS5, A5, A5, G5, G5, F5};
-  const PROGMEM uint16_t Dauer_6[] = { 2,  4,  4,  4,  4,  4,    2,     8,  2,  4,    4,  4,   4,  2,     8,  8,   8,  4,  4,  4,   4,  4,   2,     8,   8,  8,  4,  4,  4,  4,  4,  2,     8,  4,  4,  4,  4,  4,   2,  2,   4,  4,  4,  4,  2};
+  const PROGMEM uint16_t Noten_6[] = {C6, A5, C6, A5, C6, BM5, BM5, PAUSE, BM5, G5, BM5, G5, BM5, A5, PAUSE, C6, BM5, A5, A5, A5, A5, BM5, BM5, PAUSE, BM5, A5, G5, G5, G5, G5, A5, A5, PAUSE, F5, F5, G5, A5, BM5, C6, C6, D6, C6, BM5, A5, A5, G5, G5, F5};
+  const PROGMEM uint16_t Dauer_6[] = { 4,  4,  4,  4,  4,   4,   4,     4,   4,  4,   4,  4,   4,  2,     4,  8,   8,  4,  4,  4,  4,   4,   4,     4,   8,  8,  4,  4,  4,  4,  4,  4,     4,  4,  4,  4,  4,   4,  4,  8,  8,  4,   4,  4,  4,  4,  4,  2};
 
 
 // ******* Nr. 7 Alle Jahre wieder **************
 
   const PROGMEM uint16_t Noten_7[] = {A5,B5,A5,G5,F5,E5,D5,E5,F5,G5,F5,E5,F5,A5,AS5,A5,D6,C6,AS5,A5,G5,F5,G5,A5,G5};
-  const PROGMEM uint16_t Dauer_7[] = {3, 6, 4, 4, 2, 2, 4, 8, 8, 4, 4, 1, 4, 4, 4, 4, 2, 4, 4, 4, 8, 8, 4, 4, 1};
+  const PROGMEM uint16_t Dauer_7[] = { 3, 6, 4, 4, 2, 2, 4, 8, 8, 4, 4, 1, 4, 4,  4, 4, 2, 4,  4, 4, 8, 8, 4, 4, 1};
 
 
 // ******* Nr. 8 Ihr Kinderlein kommet ************** en.wikipedia.org/wiki/ihr_kinderlein,_kommet
 
-  const PROGMEM uint16_t Noten_8[] = {A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,0,A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,0,FS5,E5,E5,E5,G5,G5,G5,FS5,FS5,FS5,B5,0,B5,A5,A5,A5,D6,A5,FS5,G5,E5,CS5,D5};
-  const PROGMEM uint16_t Dauer_8[] = { 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,4, 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,4,  4, 2, 4, 4, 2, 4, 4,  2,  4,  4, 2,4, 4, 2, 4, 4, 2, 4,  4, 2, 4,  4, 2};
+  const PROGMEM uint16_t Noten_8[] = {A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,PAUSE,A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,PAUSE,FS5,E5,E5,E5,G5,G5,G5,FS5,FS5,FS5,B5,PAUSE,B5,A5,A5,A5,D6,A5,FS5,G5,E5,CS5,D5};
+  const PROGMEM uint16_t Dauer_8[] = { 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,    4, 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,    4,  4, 2, 4, 4, 2, 4, 4,  2,  4,  4, 2,    4, 4, 2, 4, 4, 2, 4,  4, 2, 4,  4, 2};
 
 // ******* Nr. 9 Kling Glöckchen **************
 
-  const PROGMEM uint16_t Noten_9[] = {C6,A5,B5,C6,D6,C6,D6,C6,0, B5,G5,C6,A5,0,G5,G5,A5,F5,A5,G5,0,B5,B5,C6,G5,B5,A5,0,G5,G5,A5,AS5,C6,G5,0,A5,D6,C6,AS5,D6,C6}; //,0,A5,B5,C6,D6,C6,D6,C6,0,B5,G5,C6,A5};
-  const PROGMEM uint16_t Dauer_9[] = {2, 4, 4, 6, 6, 6, 6, 2, 8, 2, 4, 4, 2, 8, 2, 4, 4, 4, 2, 2,8,2, 4, 4, 4, 2, 2, 8, 2, 4, 4, 4, 2, 4, 8, 2, 4, 4,  4, 2, 4}; //, 4,4, 4, 6, 6, 6, 6, 2, 4,2, 4, 4, 2};
+  const PROGMEM uint16_t Noten_9[] = {C6,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5,PAUSE,G5,G5,A5,F5,A5,G5,PAUSE,B5,B5,C6,G5,B5,A5,PAUSE,G5,G5,A5,AS5,C6,G5,PAUSE,A5,D6,C6,AS5,D6,C6}; //,PAUSE,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5};
+  const PROGMEM uint16_t Dauer_9[] = {2,  4, 4, 6, 6, 6, 6, 2,    8, 2, 4, 4, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4,  4, 2, 4,    8, 2, 4, 4,  4, 2, 4}; //,     4,4, 4, 6, 6, 6, 6, 2,     4,2, 4, 4, 2};
 
 // ******* Nr. 10 Weinachtsbäckerei **************
 
-  const PROGMEM uint16_t Noten_10[] = {G4,F5,E5,E5,D5,D5,C5,0,D5,E5,F5,F5,E5,E5,D5,0,D5,E5,F5,F5,G5,0,D5,E5,F5,F5,G5,0,G5,F5,E5,E5,G5,G5,D5,D5,G5,0,G5,F5,E5,E5,D5,D5,C5};
-  const PROGMEM uint16_t Dauer_10[] = {3, 6, 4, 4, 4, 4, 2, 8,3, 6, 4, 4, 4, 4, 2, 8,3, 6, 4, 4, 4, 8,3, 6, 4, 4, 4, 8,3, 6, 4, 4, 4, 4, 4, 4, 4, 8,3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_10[] = {G4,F5,E5,E5,D5,D5,C5,PAUSE,D5,E5,F5,F5,E5,E5,D5,PAUSE,D5,E5,F5,F5,G5,PAUSE,D5,E5,F5,F5,G5,PAUSE,G5,F5,E5,E5,G5,G5,D5,D5,G5,PAUSE,G5,F5,E5,E5,D5,D5,C5};
+  const PROGMEM uint16_t Dauer_10[] = {3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 2};
 
 // ******* Nr. 11 Morgen kommt der Weinachtsmann **************
 
-  const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,0,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
-  const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4, 6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
+  const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,PAUSE,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
+  const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4,     6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
 
 // ******* Nr. 12 Advent, Advent **************
 
-  const PROGMEM uint16_t Noten_12[] = {G5,D5,E5,D5,0,G5,D5,E5,D5,0,E5,F5,G5,A5,D5,G5,A5,AS5,0,AS5,C6,AS5,A5,G5,E5,A5,F5,G5};
-  const PROGMEM uint16_t Dauer_12[] = {6, 3, 6, 3, 8,6, 3, 6, 3, 8,6, 3, 6, 3, 6, 3, 6, 3,  8,6,  3, 6,  3, 6, 6, 6, 4, 2};
+  const PROGMEM uint16_t Noten_12[] = {G5,D5,E5,D5,PAUSE,G5,D5,E5,D5,PAUSE,E5,F5,G5,A5,D5,G5,A5,AS5,PAUSE,AS5,C6,AS5,A5,G5,E5,A5,F5,G5};
+  const PROGMEM uint16_t Dauer_12[] = {6, 3, 6, 3,     8,6, 3, 6, 3,     8,6, 3, 6, 3, 6, 3, 6, 3,      8,6,  3, 6,  3, 6, 6, 6, 4, 2};
 
 // ******* Nr. 13 Leise rieselt der Schnee **************
 
-  const PROGMEM uint16_t Noten_13[] = {B5,B5,A5,B5,A5,G5,0,G5,E5,G5,F5,E5,D5,0,A5,GS5,A5,C6,B5,A5,G5,0,A5,E5,E5,F5,E5,F5,G5};
-  const PROGMEM uint16_t Dauer_13[] = {2, 4, 4, 4, 4, 2,10,2, 4, 4, 4, 4, 2,10,4, 4,  4, 4, 4, 4, 2,10,3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_13[] = {B5,B5,A5,B5,A5,G5,PAUSE,G5,E5,G5,F5,E5,D5,PAUSE,A5,GS5,A5,C6,B5,A5,G5,PAUSE,A5,E5,E5,F5,E5,F5,G5};
+  const PROGMEM uint16_t Dauer_13[] = { 2, 4, 4, 4, 4, 2,   10, 2, 4, 4, 4, 4, 2,   10, 4,  4, 4, 4, 4, 4, 2,   10, 3, 6, 4, 4, 4, 4, 2};
 
 // ******* Nr. 14 Lasst uns froh und munter sein **************
 
-  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,F5,F5,F5,0,G5,G5,G5,A5,G5,F5,E5,E5,E5,0,D5,E5,F5,G5,A5,B5,A5,B5,A5,0,D6,A5,A5,B5,A5,G5,F5,E5,A5,0,D6,A5,A5,B5,A5,G5,F5,E5,D5};
-  const PROGMEM uint16_t Dauer_14[] = {4, 4, 6, 6, 6, 6, 4, 4, 3,10,4, 4, 6, 6, 6, 6, 4, 4, 3,10,4, 4, 4, 4, 6, 8, 6, 6, 2,10,4, 4, 6, 6, 6, 6, 4, 4, 2,10,4, 4, 6, 6, 6, 6, 4, 4, 2};
+  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,F5,F5,F5,PAUSE,G5,G5,G5,A5,G5,F5,E5,E5,E5,PAUSE,D5,E5,F5,G5,A5,B5,A5,B5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,D5};
+  const PROGMEM uint16_t Dauer_14[] = { 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 4, 4, 6, 8, 6, 6, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2};
 
 // ******* Nr. 15 Schneeflöckchen Weißröckchen **************
 
-  const PROGMEM uint16_t Noten_15[] = {E5,F5,G5,G5,A5,D5,D5,D5,E5,F5,F5,G5,E5,0,E5,F5,G5,G5,C6,B5,A5,G5,F5,E5,F5,D5,C5};
-  const PROGMEM uint16_t Dauer_15[] = {6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2,10,6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_15[] = {E5,F5,G5,G5,A5,D5,D5,D5,E5,F5,F5,G5,E5,PAUSE,E5,F5,G5,G5,C6,B5,A5,G5,F5,E5,F5,D5,C5};
+  const PROGMEM uint16_t Dauer_15[] = { 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2,   10, 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2};
 
 // ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen **************
 
-  const PROGMEM uint16_t Noten_16[] = {C5,C5,E5,G5,E5,G5,C6,A5,G5,E5,0,G5,A5,G5,F5,D5,G5,G5,D5,0,E5,E5,G5,F5,D5,F5,F5,A5,G5,E5,E5,E5,G5,F5,D5,G5,G5,E5};
-  const PROGMEM uint16_t Dauer_16[] = {6, 6, 6, 4, 6, 6, 6, 6, 4, 6,10,6, 6, 6, 4, 4, 6, 6, 4,10,6, 6, 6, 4, 6, 6, 6, 6, 4, 6, 6, 6, 6, 4, 4, 6, 6, 3};
+  const PROGMEM uint16_t Noten_16[] = {C5,C5,E5,G5,E5,G5,C6,A5,G5,E5,PAUSE,G5,A5,G5,F5,D5,G5,G5,D5,PAUSE,E5,E5,G5,F5,D5,F5,F5,A5,G5,E5,E5,E5,G5,F5,D5,G5,G5,E5};
+  const PROGMEM uint16_t Dauer_16[] = { 6, 6, 6, 4, 6, 6, 6, 6, 4, 6,   10, 6, 6, 6, 4, 4, 6, 6, 4,   10, 6, 6, 6, 4, 6, 6, 6, 6, 4, 6, 6, 6, 6, 4, 4, 6, 6, 3};
 
 // ******* Nr. 17 O Tannenbaum **************
 
-  const PROGMEM uint16_t Noten_17[] = {C5,F5,F5,F5,G5,A5,A5,A5,G5,A5,B5,E5,G5,F5,0,C6,C6,A5,D6,C6,C6,B5,B5,B5,B5,G5,C6,B5,B5,A5,A5,0,C5,F5,F5,F5,G5,A5,A5,A5,A5,G5,A5,B5,E5,G5,F5};
-  const PROGMEM uint16_t Dauer_17[] = {6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 4, 4, 4, 4,10,6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 4,10,6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_17[] = {C5,F5,F5,F5,G5,A5,A5,A5,G5,A5,B5,E5,G5,F5,PAUSE,C6,C6,A5,D6,C6,C6,B5,B5,B5,B5,G5,C6,B5,B5,A5,A5,PAUSE,C5,F5,F5,F5,G5,A5,A5,A5,A5,G5,A5,B5,E5,G5,F5};
+  const PROGMEM uint16_t Dauer_17[] = { 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 4, 4, 4, 4,   10, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 4,   10, 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 6, 4, 4, 4, 2};
 
 // ******* Nr. 18 Morgen Kinder wirds was geben **************
 
-  const PROGMEM uint16_t Noten_18[] = {F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,0,A5,A5,B5,C6,A5,B5,A5,G5,0,F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,A5,A5,B5,C6,A5,B5,A5,G5,0,B5,B5,D6,D6,G5,G5,C6,0,F5,F5,B5,B5,A5,G5,F5,E5,F5};
-  const PROGMEM uint16_t Dauer_18[] = {4, 4, 4, 4, 6, 6, 6, 6, 4, 4,10, 4, 6, 6, 4, 4, 4, 4, 2, 8,4, 4, 4, 4, 6, 6, 6, 6, 4, 4, 4, 6, 6, 4, 4, 4, 4, 2, 8,4, 4, 4, 4, 4, 4, 3, 8,4, 4, 4, 4, 6, 6, 6, 6, 2};
+  const PROGMEM uint16_t Noten_18[] = {F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,PAUSE,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,B5,B5,D6,D6,G5,G5,C6,PAUSE,F5,F5,B5,B5,A5,G5,F5,E5,F5};
+  const PROGMEM uint16_t Dauer_18[] = { 4, 4, 4, 4, 6, 6, 6, 6, 4, 4,   10, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 6, 6, 6, 6, 4, 4, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 4, 4, 3,    8, 4, 4, 4, 4, 6, 6, 6, 6, 2};
 
 // ******* Nr. 19 O du fröhliche **************
 
-  const PROGMEM uint16_t Noten_19[] = {G5,A5,G5,F5,E5,F5,0,G5,A5,G5,F5,E5,F5,0,G5,G5,A5,B5,C6,B5,A5,G5,0,D5,E5,D5,E5,F5,G5,F5,0,E5,F5,E5,F5,G5,A5,G5,0,C6,B5,A5,G5,C6,A5,G5,F5,E5,D5,C5};
-  const PROGMEM uint16_t Dauer_19[] = {2, 2, 3, 6, 4, 4,12,2, 2, 3, 6, 4, 4,12,2, 2, 2, 4, 4, 2,  2, 1,10,3, 6, 4, 4, 3, 6, 2,10,3, 6, 4, 4, 3, 6, 2,10,4,4,  4, 4, 4, 4, 4, 4, 2, 2, 1};
+  const PROGMEM uint16_t Noten_19[] = {G5,A5,G5,F5,E5,F5,PAUSE,G5,A5,G5,F5,E5,F5,PAUSE,G5,G5,A5,B5,C6,B5,A5,G5,PAUSE,D5,E5,D5,E5,F5,G5,F5,PAUSE,E5,F5,E5,F5,G5,A5,G5,PAUSE,C6,B5,A5,G5,C6,A5,G5,F5,E5,D5,C5};
+  const PROGMEM uint16_t Dauer_19[] = { 2, 2, 3, 6, 4, 4,   12, 2, 2, 3, 6, 4, 4,   12, 2, 2, 2, 4, 4, 2, 2, 1,   10, 3, 6, 4, 4, 3, 6, 2,   10, 3, 6, 4, 4, 3, 6, 2,   10, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 1};
 
 
 void setup() {
