@@ -17,9 +17,8 @@ HW siehe Fritzing Schaltplan
     8 Ihr Kinderlein kommet
     9 Kling Glöckchen
 
-    9 Morgen kommt der Weihnachtsmann
     10 Weihnachtsbäckerei
-    11 Nickolaus ist ein guter Mann
+    11 Morgen kommt der Weihnachtsmann
 
     12 Advent, Advent
     13 Leise rieselt der Schnee
@@ -56,7 +55,7 @@ HW siehe Fritzing Schaltplan
 #define IHR_KINDERLEIN_KOMMET                 8    // Lied
 #define KLING_GLOECKCHEN                      9    // Lied
 #define WEIHNACHTSBAECKEREI                   10    // Lied
-#define NICKOLAUS_IST_EIN_GUTER               11    // Lied
+#define MORGEN_KOMMT_DER_WEIHNACHTSMANN       11    // Lied
 #define ADVENT_ADVENT                         12    // Lied
 #define LEISE_RIESELT_DER_SCHNEE              13    // Lied
 #define LASST_UNS_FROH_UND_MUNTER_SEIN        14    // Lied
@@ -298,7 +297,7 @@ void setup() {
       //memcpy(noteAbstand, Abstand_3,Anzahl_Bytes);
     break;
 
-    case NICKOLAUS_IST_EIN_GUTER:
+    case MORGEN_KOMMT_DER_WEIHNACHTSMANN:
       Anzahl_Bytes=sizeof(Noten_11);
       memcpy_P(melody, Noten_11, Anzahl_Bytes);
       memcpy_P(noteDurations, Dauer_11,Anzahl_Bytes);
