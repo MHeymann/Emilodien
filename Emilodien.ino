@@ -197,6 +197,8 @@ void setup() {
   pinMode(Soundmodul,OUTPUT);
   digitalWrite(Soundmodul, LOW);          // Soundmodul AUS
 
+  char buffer[100];
+
 
   randomSeed(analogRead(A0));     // Zufall abhängig von Rauschen auf Analog Eingang
   Zufallszahl= random(ANZAHL_LIEDER);   // 0.. Anzahl Lieder -1; random nimmt als Parameter die `Obergrenze des Zufallswerts, exklusiv` (s. https://www.arduino.cc/reference/de/language/functions/random-numbers/random/ )
@@ -363,13 +365,18 @@ void setup() {
 
   }
 
-Anzahl_Noten= Anzahl_Bytes/sizeof(uint16_t);    // Achtung sizeof = Anzahl Bytes nicht Anzahl Variabeln
+  Anzahl_Noten= Anzahl_Bytes/sizeof(uint16_t);    // Achtung sizeof = Anzahl Bytes nicht Anzahl Variabeln
 
-Serial.print("Anzahl Noten= ");
-Serial.print(Anzahl_Noten);
-Serial.print(" ");
-Serial.print("Bytes=");
-Serial.println(Anzahl_Bytes);
+  sprintf(buffer, "Anzahl Noten=%d Bytes=%d\n", Anzahl_Noten, Anzahl_Bytes);
+  Serial.print(buffer);
+
+  /*
+  Serial.print("Anzahl Noten= ");
+  Serial.print(Anzahl_Noten);
+  Serial.print(" ");
+  Serial.print("Bytes=");
+  Serial.println(Anzahl_Bytes);
+  */
 
 
   if (Lied != Lied0) {
@@ -390,10 +397,15 @@ Serial.println(Anzahl_Bytes);
       //else {      // Pause statt Note
       //  delay(noteDuration);
       //}
+
+      sprintf(buffer, "%d/%d \n", thisNote, pauseBetweenNotes);
+      Serial.print(buffer);
+      /*
           Serial.print(thisNote);
           Serial.print("/");
           Serial.print(pauseBetweenNotes);
           Serial.print(" ");
+          */
 
       if (pauseBetweenNotes < 0) {
         pauseBetweenNotes= 1000;      // Pause bergenzen, fall Fehler im Array
