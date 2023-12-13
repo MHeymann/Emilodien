@@ -120,8 +120,8 @@ int Lied;         // ausgewähltes Lied
 
 // ******* Nr. 7 Alle Jahre wieder **************
 
-  const PROGMEM uint16_t Noten_7[] = {A5,B5,A5,G5,F5,E5,D5,E5,F5,G5,F5,E5,F5,A5,AS5,A5,D6,C6,AS5,A5,G5,F5,G5,A5,G5};
-  const PROGMEM uint16_t Dauer_7[] = { 3, 6, 4, 4, 2, 2, 4, 8, 8, 4, 4, 1, 4, 4,  4, 4, 2, 4,  4, 4, 8, 8, 4, 4, 1};
+  const PROGMEM uint16_t Noten_7[] = {A5, A5, B5, A5, G5, FS5, E5, D5, E5, FS5, G5, FS5, E5, E5, PAUSE, FS5, A5, B5, A5, D6, CS6, B5, A5, G5, FS5, G5, A5, FS5, FS5};
+  const PROGMEM uint16_t Dauer_7[] = { 4,  8,  8,  4,  4,   2,  2,  4,  8,   8,  4,   4,  2,  4,     4,   4,  4,  4,  4,  2,   4,  4,  4,  8,   8,  4,  4,   2,   1};
 
 
 // ******* Nr. 8 Ihr Kinderlein kommet ************** en.wikipedia.org/wiki/ihr_kinderlein,_kommet
