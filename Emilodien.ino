@@ -128,10 +128,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_8[] = {A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,PAUSE,A5,A5,FS5,A5,A5,FS5,A5,G5,E5,G5,FS5,PAUSE,FS5,E5,E5,E5,G5,G5,G5,FS5,FS5,FS5,B5,PAUSE,B5,A5,A5,A5,D6,A5,FS5,G5,E5,CS5,D5};
   const PROGMEM uint16_t Dauer_8[] = { 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,    4, 4, 2,  4, 4, 2,  4, 4, 2, 4, 4,  2,    4,  4, 2, 4, 4, 2, 4, 4,  2,  4,  4, 2,    4, 4, 2, 4, 4, 2, 4,  4, 2, 4,  4, 2};
 
-// ******* Nr. 9 Kling Glöckchen **************
+// ******* Nr. 9 Kling Glöckchen ************** https://www.lieder-archiv.de/kling_gloeckchen_klingelingeling-notenblatt_200076.html
 
-  const PROGMEM uint16_t Noten_9[] = {C6,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5,PAUSE,G5,G5,A5,F5,A5,G5,PAUSE,B5,B5,C6,G5,B5,A5,PAUSE,G5,G5,A5,AS5,C6,G5,PAUSE,A5,D6,C6,AS5,D6,C6}; //,PAUSE,A5,B5,C6,D6,C6,D6,C6,PAUSE,B5,G5,C6,A5};
-  const PROGMEM uint16_t Dauer_9[] = {2,  4, 4, 6, 6, 6, 6, 2,    8, 2, 4, 4, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4, 4, 2, 2,    8, 2, 4, 4,  4, 2, 4,    8, 2, 4, 4,  4, 2, 4}; //,     4,4, 4, 6, 6, 6, 6, 2,     4,2, 4, 4, 2};
+  const PROGMEM uint16_t Noten_9[] = {C6, A5, BM5, C6, D6, C6, D6, C6, BM5, G5, C6, A5, PAUSE, G5,  G5, A5, F5, A5, G5, BM5, BM5, C6, G5, BM5, A5, G5, G5, A5, B5, C6, G5, A5, D6, C6, B5, D6, C6, C6, A5, BM5, C6, D6, C6, D6, C6, BM5, G5, C6, A5};
+  const PROGMEM uint16_t Dauer_9[] = {2,   4,   4,  8,  8,  8,  8,  2,   2,  4,  4,  2,     2,  4,   4,  4,  4,  2,  2,   4,   4,  4,  4,   2,  2,  4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  2,  2,  2,  4,   4,  8,  8,  8,  8,  2,   2,  4,  4,  2};
 
 // ******* Nr. 10 Weinachtsbäckerei **************
 
@@ -202,7 +202,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=6;
+  //Lied=9;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
