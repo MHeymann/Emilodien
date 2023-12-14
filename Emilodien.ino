@@ -138,10 +138,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_10[] = {G4,F5,E5,E5,D5,D5,C5,PAUSE,D5,E5,F5,F5,E5,E5,D5,PAUSE,D5,E5,F5,F5,G5,PAUSE,D5,E5,F5,F5,G5,PAUSE,G5,F5,E5,E5,G5,G5,D5,D5,G5,PAUSE,G5,F5,E5,E5,D5,D5,C5};
   const PROGMEM uint16_t Dauer_10[] = {3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 2};
 
-// ******* Nr. 11 Morgen kommt der Weinachtsmann **************
+// ******* Nr. 11 Morgen kommt der Weihnachtsmann ************** https://www.lieder-archiv.de/morgen_kommt_der_weihnachtsmann-notenblatt_200018.html
 
-  const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,PAUSE,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
-  const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4,     6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
+  const PROGMEM uint16_t Noten_11[] = {G5, G5, D6, D6, E6, E6, D6, C6, C6, B5, B5, A5, G5, PAUSE, D6, D6, C6, C6, B5, B5, A5, D6, D6, C6, C6, B5, B5, A5, G5, G5, D6, D6, E6, E6, D6, C6, C6, B5, B5, A5, G5};
+  const PROGMEM uint16_t Dauer_11[] = { 4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  2,  4,     4,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  2,  2};
 
 // ******* Nr. 12 Advent, Advent **************
 
