@@ -153,10 +153,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_13[] = {B5,B5,A5,B5,A5,G5,PAUSE,G5,E5,G5,F5,E5,D5,PAUSE,A5,GS5,A5,C6,B5,A5,G5,PAUSE,A5,E5,E5,F5,E5,F5,G5};
   const PROGMEM uint16_t Dauer_13[] = { 2, 4, 4, 4, 4, 2,   10, 2, 4, 4, 4, 4, 2,   10, 4,  4, 4, 4, 4, 4, 2,   10, 3, 6, 4, 4, 4, 4, 2};
 
-// ******* Nr. 14 Lasst uns froh und munter sein **************
+// ******* Nr. 14 Lasst uns froh und munter sein ************** https://www.lieder-archiv.de/lasst_uns_froh_und_munter_sein-notenblatt_200014.html
 
-  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,F5,F5,F5,PAUSE,G5,G5,G5,A5,G5,F5,E5,E5,E5,PAUSE,D5,E5,F5,G5,A5,B5,A5,B5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,D5};
-  const PROGMEM uint16_t Dauer_14[] = { 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 4, 4, 6, 8, 6, 6, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2};
+  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,FS5,FS5,FS5,PAUSE,G5,G5,G5,A5,G5,FS5,E5,E5,E5,PAUSE,D5,E5,FS5,G5,A5, A5, B5,A5,B5,A5,D6,A5,A5,B5,A5,G5,FS5,E5,A5,D6,A5,A5,B5,A5,G5,FS5,E5,D5};
+  const PROGMEM uint16_t Dauer_14[] = { 4, 4, 8, 8, 8, 8,  4,  4,  4,    4, 4, 4, 8, 8, 8,  8, 4, 4, 4,    4, 4, 4,  4, 4, 8, 16, 16, 8, 8, 2, 4, 4, 8, 8, 8, 8,  4, 4, 2, 4, 4, 8, 8, 8, 8,  4, 4, 4};
 
 // ******* Nr. 15 Schneeflöckchen Weißröckchen **************
 
