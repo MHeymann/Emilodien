@@ -19,7 +19,6 @@ HW siehe Fritzing Schaltplan
 
     10 Weihnachtsbäckerei
     11 Morgen kommt der Weihnachtsmann
-    ?11 Nickolaus ist ein guter Mann
 
     12 Advent, Advent
     13 Leise rieselt der Schnee
