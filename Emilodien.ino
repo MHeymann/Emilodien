@@ -143,10 +143,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,PAUSE,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
   const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4,     6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
 
-// ******* Nr. 12 Advent, Advent **************
+// ******* Nr. 12 Advent, Advent ************** https://www.lieder-archiv.de/advent_advent-notenblatt_200013.html
 
-  const PROGMEM uint16_t Noten_12[] = {G5,D5,E5,D5,PAUSE,G5,D5,E5,D5,PAUSE,E5,F5,G5,A5,D5,G5,A5,AS5,PAUSE,AS5,C6,AS5,A5,G5,E5,A5,F5,G5};
-  const PROGMEM uint16_t Dauer_12[] = {6, 3, 6, 3,     8,6, 3, 6, 3,     8,6, 3, 6, 3, 6, 3, 6, 3,      8,6,  3, 6,  3, 6, 6, 6, 4, 2};
+  const PROGMEM uint16_t Noten_12[] = {G5, D5, E5, D5, G5, D5, E5, D5, E5, FS5, G5, A5, D5, G5, A5, B5, B5, C6, B5, A5, G5, E5, A5, FS5, G5};
+  const PROGMEM uint16_t Dauer_12[] = { 8,  4,  8,  4,  8,  4,  8,  4,  8,   4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  8,  8,   8,  4};
 
 // ******* Nr. 13 Leise rieselt der Schnee **************
 
