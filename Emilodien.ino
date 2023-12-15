@@ -158,10 +158,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,F5,F5,F5,PAUSE,G5,G5,G5,A5,G5,F5,E5,E5,E5,PAUSE,D5,E5,F5,G5,A5,B5,A5,B5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,D5};
   const PROGMEM uint16_t Dauer_14[] = { 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 4, 4, 6, 8, 6, 6, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2};
 
-// ******* Nr. 15 Schneeflöckchen Weißröckchen **************
+// ******* Nr. 15 Schneeflöckchen Weißröckchen ************** https://www.lieder-archiv.de/schneefloeckchen_weissroeckchen-notenblatt_200008.html
 
-  const PROGMEM uint16_t Noten_15[] = {E5,F5,G5,G5,A5,D5,D5,D5,E5,F5,F5,G5,E5,PAUSE,E5,F5,G5,G5,C6,B5,A5,G5,F5,E5,F5,D5,C5};
-  const PROGMEM uint16_t Dauer_15[] = { 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2,   10, 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_15[] = {E5, F5, G5, G5, A5, D5, D5, D5, E5, F5, F5, G5, E5, E5, F5, G5, G5, C6, B5, A5, G5, F5, E5, F5, D5, C5};
+  const PROGMEM uint16_t Dauer_15[] = { 8,  8,  4,  4,  4,  4,  4,  8,  8,  4,  4,  4,  2,  8,  8,  4,  4,  4,  4,  4,  8,  8,  4,  4,  4,  2};
 
 // ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen **************
 
