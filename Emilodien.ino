@@ -163,10 +163,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_15[] = {E5,F5,G5,G5,A5,D5,D5,D5,E5,F5,F5,G5,E5,PAUSE,E5,F5,G5,G5,C6,B5,A5,G5,F5,E5,F5,D5,C5};
   const PROGMEM uint16_t Dauer_15[] = { 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2,   10, 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2};
 
-// ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen **************
+// ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen ************** https://www.lieder-archiv.de/am_weihnachtsbaum_die_lichter_brennen-notenblatt_200070.html
 
-  const PROGMEM uint16_t Noten_16[] = {C5,C5,E5,G5,E5,G5,C6,A5,G5,E5,PAUSE,G5,A5,G5,F5,D5,G5,G5,D5,PAUSE,E5,E5,G5,F5,D5,F5,F5,A5,G5,E5,E5,E5,G5,F5,D5,G5,G5,E5};
-  const PROGMEM uint16_t Dauer_16[] = { 6, 6, 6, 4, 6, 6, 6, 6, 4, 6,   10, 6, 6, 6, 4, 4, 6, 6, 4,   10, 6, 6, 6, 4, 6, 6, 6, 6, 4, 6, 6, 6, 6, 4, 4, 6, 6, 3};
+  const PROGMEM uint16_t Noten_16[] = {C5, C5, E5, G5, E5, G5, C6, A5, G5, E5, G5, A5, G5, F5, D5, G5, G5, E5, PAUSE, E5, E5, G5, F5, D5, F5, F5, A5, G5, E5, E5, E5, G5, F5, D5, G5, G5, E5};
+  const PROGMEM uint16_t Dauer_16[] = { 8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4,     8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4};
 
 // ******* Nr. 17 O Tannenbaum **************
 
