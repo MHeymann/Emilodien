@@ -173,10 +173,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_17[] = {C5,F5,F5,F5,G5,A5,A5,A5,G5,A5,B5,E5,G5,F5,PAUSE,C6,C6,A5,D6,C6,C6,B5,B5,B5,B5,G5,C6,B5,B5,A5,A5,PAUSE,C5,F5,F5,F5,G5,A5,A5,A5,A5,G5,A5,B5,E5,G5,F5};
   const PROGMEM uint16_t Dauer_17[] = { 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 4, 4, 4, 4,   10, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 4,   10, 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 6, 4, 4, 4, 2};
 
-// ******* Nr. 18 Morgen Kinder wirds was geben **************
+// ******* Nr. 18 Morgen Kinder wirds was geben ************** https://www.lieder-archiv.de/morgen_kinder_wirds_was_geben-notenblatt_200020.html
 
-  const PROGMEM uint16_t Noten_18[] = {F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,PAUSE,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,B5,B5,D6,D6,G5,G5,C6,PAUSE,F5,F5,B5,B5,A5,G5,F5,E5,F5};
-  const PROGMEM uint16_t Dauer_18[] = { 4, 4, 4, 4, 6, 6, 6, 6, 4, 4,   10, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 6, 6, 6, 6, 4, 4, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 4, 4, 3,    8, 4, 4, 4, 4, 6, 6, 6, 6, 2};
+  const PROGMEM uint16_t Noten_18[] = {F5, C5, D5, C5, D5, F5, E5, G5, F5, C5, A5, A5, BM5, C6, A5, BM5, A5, G5, F5, C5, D5, C5, D5, F5, E5, G5, F5, C5, A5, A5, BM5, C6, A5, BM5, A5, G5, BM5, BM5, D6, D6, G5, G5, C6, F5, F5, BM5, BM5, A5, G5, F5, E5, F5};
+  const PROGMEM uint16_t Dauer_18[] = { 4,  4,  4,  4,  8,  8,  8,  8,  4,  4,  4,  8,   8,  4,  4,   4,  4,  2,  4,  4,  4,  4,  8,  8,  8,  8,  4,  4,  4,  8,   8,  4,  4,   4,  4,  2,   4,   4,  4,  4,  4,  4,  2,  4,  4,   4,   4,  8,  8,  8,  8,  2};
 
 // ******* Nr. 19 O du fröhliche **************
 
