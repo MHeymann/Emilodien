@@ -202,7 +202,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  Lied=12;
+  //Lied=12;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
