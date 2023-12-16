@@ -146,7 +146,7 @@ int Lied;         // ausgewähltes Lied
 // ******* Nr. 12 Advent, Advent ************** https://www.youtube.com/watch?v=xGh-adhBfVM&ab_channel=J%C3%BCrgenFastje
 
   const PROGMEM uint16_t Noten_12[] = {C5, F5, G5, A5, BM5, A5, F5, G5, F5, A5, G5, E5, C5, A5, G5, E5, C5, C5, F5, G5, A5, BM5, A5, F5, G5, F5};
-  const PROGMEM uint16_t Dauer_12[] = { 8,  4,  8,  4,   8,  8,  8,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,   8,  8,  8,  8,  4};
+  const PROGMEM uint16_t Dauer_12[] = { 4,  2,  4,  2,   4,  4,  4,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,   4,  4,  4,  4,  2};
 
 // ******* Nr. 13 Leise rieselt der Schnee **************
 
