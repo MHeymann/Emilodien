@@ -84,43 +84,43 @@ int Lied;         // ausgewähltes Lied
 
 // **********  Mary has a little lamb ************
 
-  const int Noten_1[] PROGMEM = {E5, D5, C5, D5, E5, E5, E5, D5, D5, D5, E5, G5, G5, E5, D5, C5, D5, E5, E5, E5, E5, D5, D5, E5, D5, C5};
-  const int Dauer_1[] PROGMEM = {4,  4,  4,  4,  4,  4,  2,  4,  4,  2,  4,  4,  2,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  1};
+  const int Noten_1[] PROGMEM = { E5, D5, C5, D5, E5, E5, E5, D5, D5, D5, E5, G5, G5, E5, D5, C5, D5, E5, E5, E5, E5, D5, D5, E5, D5, C5};
+  const int Dauer_1[] PROGMEM = {.25,.25,.25,.25,.25,.25, .5,.25,.25, .5,.25,.25, .5,.25,.25,.25,.25,.25,.25,.25,.25,.25,.25,.25,.25, 1.};
 
 
 // ************* ABC die Katze lief im Schnee (Seite 263) ************ https://www.lieder-archiv.de/a_b_c_die_katze_lief_im_schnee-notenblatt_100054.html
   const PROGMEM uint16_t Noten_2[] = {F5, A5, C6, PAUSE, BM5, A5, A5, A5, G5, G5, F5, PAUSE, C6, BM5, A5, G5, F5, E5, F5, G5, C6, BM5, A5, G5, F5, E5, F5, G5, C5, F5, A5, C6, PAUSE, BM5, A5, A5, A5, G5, G5, F5};
-  const PROGMEM uint16_t Dauer_2[] = { 2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2,     4,  4,   4,  4,  4,  4,  4,  4,  4,  4,   4,  4,  4,  4,  4,  4,  4,  4,  2,  2,  2,     4,   4,  4,  8,  8,  4,  4,  2};
+  const PROGMEM uint16_t Dauer_2[] = {.5, .5, .5,   .25, .25,.25,  8,  8,.25,.25, .5,   .25,.25, .25,.25,.25,.25,.25,.25,.25,.25, .25,.25,.25,.25,.25,.25,.25,.25, .5, .5, .5,   .25, .25,.25,  8,  8,.25,.25,  2};
 
 
 // *** Alle meine Entchen *** https://www.kleinemusiker.de/alle-meine-entchen/
 
   const PROGMEM uint16_t Noten_3[] = {C5, D5, E5, F5, G5, G5, A5, A5, A5, A5, G5, A5, A5, A5, A5, G5, F5, F5, F5, F5, E5, E5, G5, G5, G5, G5, C5};
-  const PROGMEM uint16_t Dauer_3[] = { 4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1,  4,  4,  4,  4,  1,  4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  1};
+  const PROGMEM uint16_t Dauer_3[] = .25,.25,.25,.25, .5, .5,.25,.25,.25,.25,  1,.25,.25,.25,.25,  1,.25,.25,.25,.25, .5, .5,.25,.25,.25,.25,  1};
 
 
 // *** Nr. 4 Kuckuck, Kuckuck, ruft's aus dem Wald   *** https://www.franzdorfer.com/kuckuck-rufts-aus-dem-wald
 
   const PROGMEM uint16_t Noten_4[] = {C6, A5, PAUSE, C6, A5, PAUSE, G5, F5, G5, F5, PAUSE, G5, G5, A5, BM5, G5, A5, A5, BM5, C6, A5, C6, A5, C6, A5, G5, F5, G5, F5, F5};
-  const PROGMEM uint16_t Dauer_4[] = { 4,  4,     4,  4,  4,     4,  4,  4,  4,  2,     4,  4,  4,  4,   2,  4,  4,  4,   4,  2,  4,  2,  4,  2,  4,  4,  4,  4,  2,  4};
+  const PROGMEM uint16_t Dauer_4[] = .25,.25,   .25,.25,.25,   .25,.25,.25,.25, .5,   .25,.25,.25,.25,  .5,.25,.25,.25, .25, .5,.25, .5,.25, .5,.25,.25,.25,.25, .5,.25};
 
 
 // ******* Nr. 5 Heidi **************
 
-  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, G5, E5, F5, E5, D5, D5, PAUSE, F5, D5, D6, B5, B5, B5, B5, A5,G5, A5, G5,E5, E5};
-  const PROGMEM uint16_t Dauer_5[] = { 2,  2,  2,  2,  4,  8,  4,  4,  8,  4,  8,  8,  4,     4,  2,  2,  2,  2,  4,  8,  4,  8, 4,  4,  8, 8,  4};
+  const PROGMEM uint16_t Noten_5[] = {G5, E5, E6, C6, G5, G5, A5, G5, E5, F5, E5, D5, D5, PAUSE, F5, D5, D6, B5, B5, B5, B5, A5,G5, A5, G5, E5, E5};
+  const PROGMEM uint16_t Dauer_5[] = {.5, .5, .5, .5,.25,  8,.25,.25,  8,.25,  8,  8,.25,   .25, .5, .5, .5, .5,.25,  8,.25,  8.25,.25,  8,  8,.25};
 
 
 // ******* Nr. 6 Der Kuckuck und der Esel ************** https://www.heilpaedagogik-info.de/tierlieder/1774-der-kuckuck-und-der-esel.html
 
   const PROGMEM uint16_t Noten_6[] = {C6, A5, C6, A5, C6, BM5, BM5, PAUSE, BM5, G5, BM5, G5, BM5, A5, PAUSE, C6, BM5, A5, A5, A5, A5, BM5, BM5, PAUSE, BM5, A5, G5, G5, G5, G5, A5, A5, PAUSE, F5, F5, G5, A5, BM5, C6, C6, D6, C6, BM5, A5, A5, G5, G5, F5};
-  const PROGMEM uint16_t Dauer_6[] = { 4,  4,  4,  4,  4,   4,   4,     4,   4,  4,   4,  4,   4,  2,     4,  8,   8,  4,  4,  4,  4,   4,   4,     4,   8,  8,  4,  4,  4,  4,  4,  4,     4,  4,  4,  4,  4,   4,  4,  8,  8,  4,   4,  4,  4,  4,  4,  2};
+  const PROGMEM uint16_t Dauer_6[] = .25,.25,.25,.25,.25, .25, .25,   .25, .25,.25, .25,.25, .25, .5,   .25,  8,   8,.25,.25,.25,.25, .25, .25,   .25,   8,  8,.25,.25,.25,.25,.25,.25,   .25,.25,.25,.25,.25, .25,.25,  8,  8,.25, .25,.25,.25,.25,.25,  2};
 
 
 // ******* Nr. 7 Alle Jahre wieder ************** https://www.lieder-archiv.de/alle_jahre_wieder-notenblatt_200009.html
 
   const PROGMEM uint16_t Noten_7[] = {A5, A5, B5, A5, G5, FS5, E5, D5, E5, FS5, G5, FS5, E5, E5, PAUSE, FS5, A5, B5, A5, D6, CS6, B5, A5, G5, FS5, G5, A5, FS5, FS5};
-  const PROGMEM uint16_t Dauer_7[] = { 4,  8,  8,  4,  4,   2,  2,  4,  8,   8,  4,   4,  2,  4,     4,   4,  4,  4,  4,  2,   4,  4,  4,  8,   8,  4,  4,   2,   1};
+  const PROGMEM uint16_t Dauer_7[] = .25,  8,  8,.25,.25,  .5, .5,.25,  8,   8,.25, .25, .5,.25,   .25, .25,.25,.25,.25, .5, .25,.25,.25,  8,   8,.25,.25,  .5,   1};
 
 
 // ******* Nr. 8 Ihr Kinderlein kommet ************** en.wikipedia.org/wiki/ihr_kinderlein,_kommet
