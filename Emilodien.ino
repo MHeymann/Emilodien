@@ -143,10 +143,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,PAUSE,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
   const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4,     6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
 
-// ******* Nr. 12 Advent, Advent ************** https://www.lieder-archiv.de/advent_advent-notenblatt_200013.html
+// ******* Nr. 12 Advent, Advent ************** https://www.youtube.com/watch?v=xGh-adhBfVM&ab_channel=J%C3%BCrgenFastje
 
-  const PROGMEM uint16_t Noten_12[] = {G5, D5, E5, D5, G5, D5, E5, D5, E5, FS5, G5, A5, D5, G5, A5, B5, B5, C6, B5, A5, G5, E5, A5, FS5, G5};
-  const PROGMEM uint16_t Dauer_12[] = { 8,  4,  8,  4,  8,  4,  8,  4,  8,   4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  8,  8,   8,  4};
+  const PROGMEM uint16_t Noten_12[] = {C5, F5, G5, A5, BM5, A5, F5, G5, F5, A5, G5, E5, C5, A5, G5, E5, C5, C5, F5, G5, A5, BM5, A5, F5, G5, F5};
+  const PROGMEM uint16_t Dauer_12[] = { 8,  4,  8,  4,   8,  8,  8,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,  8,  4,   8,  8,  8,  8,  4};
 
 // ******* Nr. 13 Leise rieselt der Schnee **************
 
@@ -202,7 +202,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=9;
+  Lied=12;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
