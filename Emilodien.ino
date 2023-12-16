@@ -168,10 +168,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_16[] = {C5, C5, E5, G5, E5, G5, C6, A5, G5, E5, G5, A5, G5, F5, D5, G5, G5, E5, PAUSE, E5, E5, G5, F5, D5, F5, F5, A5, G5, E5, E5, E5, G5, F5, D5, G5, G5, E5};
   const PROGMEM uint16_t Dauer_16[] = { 8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4,     8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4};
 
-// ******* Nr. 17 O Tannenbaum **************
+// ******* Nr. 17 O Tannenbaum ************** https://www.lieder-archiv.de/o_tannenbaum-notenblatt_200078.html
 
-  const PROGMEM uint16_t Noten_17[] = {C5,F5,F5,F5,G5,A5,A5,A5,G5,A5,B5,E5,G5,F5,PAUSE,C6,C6,A5,D6,C6,C6,B5,B5,B5,B5,G5,C6,B5,B5,A5,A5,PAUSE,C5,F5,F5,F5,G5,A5,A5,A5,A5,G5,A5,B5,E5,G5,F5};
-  const PROGMEM uint16_t Dauer_17[] = { 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 4, 4, 4, 4,   10, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 4,   10, 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_17[] = {C5, F5, F5, F5, G5, A5, A5, A5, G5, A5, BM5, E5, G5, F5, PAUSE, C6, C6, A5, D6, C6, C6, BM5, BM5, BM5, BM5, G5, C6, BM5, BM5, A5, A5, PAUSE, C5, F5, F5, F5, G5, A5, A5, A5, A5, G5, A5, BM5, E5, G5, F5};
+  const PROGMEM uint16_t Dauer_17[] = { 6,  3,  8,  3,  6,  3,  8,  3,  6,  6,  4,  4,  4,  4,    10,  6,  6,  6,  3,  6,  6,  6,  3,  6,  6,  6,  3,  6,  6,  6,  4,    10,  6,  3,  8,  3,  6,  3,  8,  3,  6,  6,  6,  4,  4,  4,  2};
 
 // ******* Nr. 18 Morgen Kinder wirds was geben ************** https://www.lieder-archiv.de/morgen_kinder_wirds_was_geben-notenblatt_200020.html
 
