@@ -133,50 +133,50 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_9[] = {C6, A5, BM5, C6, D6, C6, D6, C6, BM5, G5, C6, A5, PAUSE, G5,  G5, A5, F5, A5, G5, BM5, BM5, C6, G5, BM5, A5, G5, G5, A5, B5, C6, G5, A5, D6, C6, B5, D6, C6, C6, A5, BM5, C6, D6, C6, D6, C6, BM5, G5, C6, A5};
   const PROGMEM uint16_t Dauer_9[] = {2,   4,   4,  8,  8,  8,  8,  2,   2,  4,  4,  2,     2,  4,   4,  4,  4,  2,  2,   4,   4,  4,  4,   2,  2,  4,  4,  4,  4,  2,  2,  4,  4,  4,  4,  2,  2,  2,  4,   4,  8,  8,  8,  8,  2,   2,  4,  4,  2};
 
-// ******* Nr. 10 Weinachtsbäckerei **************
+// ******* Nr. 10 Weinachtsbäckerei ************** https://musescore.com/user/27319323/scores/4864383
 
-  const PROGMEM uint16_t Noten_10[] = {G4,F5,E5,E5,D5,D5,C5,PAUSE,D5,E5,F5,F5,E5,E5,D5,PAUSE,D5,E5,F5,F5,G5,PAUSE,D5,E5,F5,F5,G5,PAUSE,G5,F5,E5,E5,G5,G5,D5,D5,G5,PAUSE,G5,F5,E5,E5,D5,D5,C5};
-  const PROGMEM uint16_t Dauer_10[] = {3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4, 4, 2,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 4, 4, 4,     8,3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_10[] = {G4, G4, F5, E5, E5, D5, D5, C5, C5, D5, D5, E5, F5, F5, E5, E5, D5, D5, D5, D5, E5, F5, F5, G5, D5, D5, E5, F5, F5, G5, G5, G5, F5, E5, E5, G5, G5, D5, D5, G5, G5, G5, F5, E5, E5, D5, D5, C5, A5, A5, F5, E5, E5, D5, D5, C5, C5};
+  const PROGMEM uint16_t Dauer_10[] = { 8, 16, 16,  4,  4,  4,  4,  2,  4,  8, 16, 16,  4,  4,  4,  4,  2,  4,  8, 16, 16,  4,  4,  4,  8, 16, 16,  4,  4,  4,  8, 16, 16,  4,  4,  4,  4,  4,  4,  4,  8, 16, 16,  4,  4,  4,  4,  2,  4,  8,  8,  4,  4,  4,  4,  2,  4};
 
-// ******* Nr. 11 Morgen kommt der Weinachtsmann **************
+// ******* Nr. 11 Morgen kommt der Weihnachtsmann ************** https://www.lieder-archiv.de/morgen_kommt_der_weihnachtsmann-notenblatt_200018.html
 
-  const PROGMEM uint16_t Noten_11[] = {G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5,PAUSE,D6,D6,C6,C6,B5,B5,A5,D6,D6,C6,C6,B5,B5,A5,G5,G5,D6,D6,E6,E6,D6,C6,C6,B5,B5,A5,G5};
-  const PROGMEM uint16_t Dauer_11[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 4,     6,4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 2, 2};
+  const PROGMEM uint16_t Noten_11[] = {G5, G5, D6, D6, E6, E6, D6, C6, C6, B5, B5, A5, G5, PAUSE, D6, D6, C6, C6, B5, B5, A5, D6, D6, C6, C6, B5, B5, A5, G5, G5, D6, D6, E6, E6, D6, C6, C6, B5, B5, A5, G5};
+  const PROGMEM uint16_t Dauer_11[] = { 4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  2,  4,     4,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  4,  4,  2,  4,  4,  4,  4,  2,  2};
 
-// ******* Nr. 12 Advent, Advent **************
+// ******* Nr. 12 Advent, Advent ************** https://www.youtube.com/watch?v=xGh-adhBfVM&ab_channel=J%C3%BCrgenFastje
 
-  const PROGMEM uint16_t Noten_12[] = {G5,D5,E5,D5,PAUSE,G5,D5,E5,D5,PAUSE,E5,F5,G5,A5,D5,G5,A5,AS5,PAUSE,AS5,C6,AS5,A5,G5,E5,A5,F5,G5};
-  const PROGMEM uint16_t Dauer_12[] = {6, 3, 6, 3,     8,6, 3, 6, 3,     8,6, 3, 6, 3, 6, 3, 6, 3,      8,6,  3, 6,  3, 6, 6, 6, 4, 2};
+  const PROGMEM uint16_t Noten_12[] = {C5, F5, G5, A5, BM5, A5, F5, G5, F5, A5, G5, E5, C5, A5, G5, E5, C5, C5, F5, G5, A5, BM5, A5, F5, G5, F5};
+  const PROGMEM uint16_t Dauer_12[] = { 4,  2,  4,  2,   4,  4,  4,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,   4,  4,  4,  4,  2};
 
-// ******* Nr. 13 Leise rieselt der Schnee **************
+// ******* Nr. 13 Leise rieselt der Schnee ************** https://www.lieder-archiv.de/leise_rieselt_der_schnee-notenblatt_200012.html
 
-  const PROGMEM uint16_t Noten_13[] = {B5,B5,A5,B5,A5,G5,PAUSE,G5,E5,G5,F5,E5,D5,PAUSE,A5,GS5,A5,C6,B5,A5,G5,PAUSE,A5,E5,E5,F5,E5,F5,G5};
-  const PROGMEM uint16_t Dauer_13[] = { 2, 4, 4, 4, 4, 2,   10, 2, 4, 4, 4, 4, 2,   10, 4,  4, 4, 4, 4, 4, 2,   10, 3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_13[] = {B5, B5, A5, B5, A5, G5, G5, PAUSE, G5, E5, G5, FS5, E5, D5, D5, PAUSE, A5, GS5, A5, C6, B5, A5, G5, G5, PAUSE, A5, A5, E5, E5, FS5, E5, FS5, G5, G5};
+  const PROGMEM uint16_t Dauer_13[] = { 2,  4,  4,  4,  4,  1,  4,     4,  2,  4,  4,   4,  4,  1,  4,     4,  4,   4,  4,  4,  4,  4,  1,  4,     4,  4,  8,  8,  4,   4,  4,   4,  1,  4};
 
-// ******* Nr. 14 Lasst uns froh und munter sein **************
+// ******* Nr. 14 Lasst uns froh und munter sein ************** https://www.lieder-archiv.de/lasst_uns_froh_und_munter_sein-notenblatt_200014.html
 
-  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,F5,F5,F5,PAUSE,G5,G5,G5,A5,G5,F5,E5,E5,E5,PAUSE,D5,E5,F5,G5,A5,B5,A5,B5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,A5,PAUSE,D6,A5,A5,B5,A5,G5,F5,E5,D5};
-  const PROGMEM uint16_t Dauer_14[] = { 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 6, 6, 6, 6, 4, 4, 3,   10, 4, 4, 4, 4, 6, 8, 6, 6, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2,   10, 4, 4, 6, 6, 6, 6, 4, 4, 2};
+  const PROGMEM uint16_t Noten_14[] = {A5,A5,A5,B5,A5,G5,FS5,FS5,FS5,PAUSE,G5,G5,G5,A5,G5,FS5,E5,E5,E5,PAUSE,D5,E5,FS5,G5,A5, A5, B5,A5,B5,A5,D6,A5,A5,B5,A5,G5,FS5,E5,A5,D6,A5,A5,B5,A5,G5,FS5,E5,D5};
+  const PROGMEM uint16_t Dauer_14[] = { 4, 4, 8, 8, 8, 8,  4,  4,  4,    4, 4, 4, 8, 8, 8,  8, 4, 4, 4,    4, 4, 4,  4, 4, 8, 16, 16, 8, 8, 2, 4, 4, 8, 8, 8, 8,  4, 4, 2, 4, 4, 8, 8, 8, 8,  4, 4, 4};
 
-// ******* Nr. 15 Schneeflöckchen Weißröckchen **************
+// ******* Nr. 15 Schneeflöckchen Weißröckchen ************** https://www.lieder-archiv.de/schneefloeckchen_weissroeckchen-notenblatt_200008.html
 
-  const PROGMEM uint16_t Noten_15[] = {E5,F5,G5,G5,A5,D5,D5,D5,E5,F5,F5,G5,E5,PAUSE,E5,F5,G5,G5,C6,B5,A5,G5,F5,E5,F5,D5,C5};
-  const PROGMEM uint16_t Dauer_15[] = { 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2,   10, 6, 6, 4, 4, 4, 4, 4, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_15[] = {E5, F5, G5, G5, A5, D5, D5, D5, E5, F5, F5, G5, E5, E5, F5, G5, G5, C6, B5, A5, G5, F5, E5, F5, D5, C5};
+  const PROGMEM uint16_t Dauer_15[] = { 8,  8,  4,  4,  4,  4,  4,  8,  8,  4,  4,  4,  2,  8,  8,  4,  4,  4,  4,  4,  8,  8,  4,  4,  4,  2};
 
-// ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen **************
+// ******* Nr. 16 Am Weihnachtsbaum die Lichter brennen ************** https://www.lieder-archiv.de/am_weihnachtsbaum_die_lichter_brennen-notenblatt_200070.html
 
-  const PROGMEM uint16_t Noten_16[] = {C5,C5,E5,G5,E5,G5,C6,A5,G5,E5,PAUSE,G5,A5,G5,F5,D5,G5,G5,D5,PAUSE,E5,E5,G5,F5,D5,F5,F5,A5,G5,E5,E5,E5,G5,F5,D5,G5,G5,E5};
-  const PROGMEM uint16_t Dauer_16[] = { 6, 6, 6, 4, 6, 6, 6, 6, 4, 6,   10, 6, 6, 6, 4, 4, 6, 6, 4,   10, 6, 6, 6, 4, 6, 6, 6, 6, 4, 6, 6, 6, 6, 4, 4, 6, 6, 3};
+  const PROGMEM uint16_t Noten_16[] = {C5, C5, E5, G5, E5, G5, C6, A5, G5, E5, G5, A5, G5, F5, D5, G5, G5, E5, PAUSE, E5, E5, G5, F5, D5, F5, F5, A5, G5, E5, E5, E5, G5, F5, D5, G5, G5, E5};
+  const PROGMEM uint16_t Dauer_16[] = { 8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4,     8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  8,  8,  8,  8,  4,  4,  8,  8,  4};
 
-// ******* Nr. 17 O Tannenbaum **************
+// ******* Nr. 17 O Tannenbaum ************** https://www.lieder-archiv.de/o_tannenbaum-notenblatt_200078.html
 
-  const PROGMEM uint16_t Noten_17[] = {C5,F5,F5,F5,G5,A5,A5,A5,G5,A5,B5,E5,G5,F5,PAUSE,C6,C6,A5,D6,C6,C6,B5,B5,B5,B5,G5,C6,B5,B5,A5,A5,PAUSE,C5,F5,F5,F5,G5,A5,A5,A5,A5,G5,A5,B5,E5,G5,F5};
-  const PROGMEM uint16_t Dauer_17[] = { 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 4, 4, 4, 4,   10, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 3, 6, 6, 6, 4,   10, 6, 3, 8, 3, 6, 3, 8, 3, 6, 6, 6, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_17[] = {C5, F5, F5, F5, G5, A5, A5, A5, G5, A5, BM5, E5, G5, F5, PAUSE, C6, C6, A5, D6, C6, C6, BM5, BM5, BM5, BM5, G5, C6, BM5, BM5, A5, A5, PAUSE, C5, F5, F5, F5, G5, A5, A5, A5, A5, G5, A5, BM5, E5, G5, F5};
+  const PROGMEM uint16_t Dauer_17[] = { 6,  3,  8,  3,  6,  3,  8,  3,  6,  6,  4,  4,  4,  4,    10,  6,  6,  6,  3,  6,  6,  6,  3,  6,  6,  6,  3,  6,  6,  6,  4,    10,  6,  3,  8,  3,  6,  3,  8,  3,  6,  6,  6,  4,  4,  4,  2};
 
-// ******* Nr. 18 Morgen Kinder wirds was geben **************
+// ******* Nr. 18 Morgen Kinder wirds was geben ************** https://www.lieder-archiv.de/morgen_kinder_wirds_was_geben-notenblatt_200020.html
 
-  const PROGMEM uint16_t Noten_18[] = {F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,PAUSE,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,F5,C5,D5,C5,D5,F5,E5,G5,F5,C5,A5,A5,B5,C6,A5,B5,A5,G5,PAUSE,B5,B5,D6,D6,G5,G5,C6,PAUSE,F5,F5,B5,B5,A5,G5,F5,E5,F5};
-  const PROGMEM uint16_t Dauer_18[] = { 4, 4, 4, 4, 6, 6, 6, 6, 4, 4,   10, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 6, 6, 6, 6, 4, 4, 4, 6, 6, 4, 4, 4, 4, 2,    8, 4, 4, 4, 4, 4, 4, 3,    8, 4, 4, 4, 4, 6, 6, 6, 6, 2};
+  const PROGMEM uint16_t Noten_18[] = {F5, C5, D5, C5, D5, F5, E5, G5, F5, C5, A5, A5, BM5, C6, A5, BM5, A5, G5, F5, C5, D5, C5, D5, F5, E5, G5, F5, C5, A5, A5, BM5, C6, A5, BM5, A5, G5, BM5, BM5, D6, D6, G5, G5, C6, F5, F5, BM5, BM5, A5, G5, F5, E5, F5};
+  const PROGMEM uint16_t Dauer_18[] = { 4,  4,  4,  4,  8,  8,  8,  8,  4,  4,  4,  8,   8,  4,  4,   4,  4,  2,  4,  4,  4,  4,  8,  8,  8,  8,  4,  4,  4,  8,   8,  4,  4,   4,  4,  2,   4,   4,  4,  4,  4,  4,  2,  4,  4,   4,   4,  8,  8,  8,  8,  2};
 
 // ******* Nr. 19 O du fröhliche **************
 
@@ -202,7 +202,7 @@ void setup() {
   Lied  = Zufallszahl+1;                  // 0= Sound Modul aktivieren  vorläufig unterdrücken::  1... Anzahl Lieder
 
   // für debug Lied fix auswählen
-  //Lied=9;
+  //Lied=12;
 
   Serial.begin(9600);
   while (!Serial) {;}  // warten bis der serielle Port verbunden
