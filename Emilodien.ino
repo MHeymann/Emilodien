@@ -148,10 +148,10 @@ int Lied;         // ausgewähltes Lied
   const PROGMEM uint16_t Noten_12[] = {C5, F5, G5, A5, BM5, A5, F5, G5, F5, A5, G5, E5, C5, A5, G5, E5, C5, C5, F5, G5, A5, BM5, A5, F5, G5, F5};
   const PROGMEM uint16_t Dauer_12[] = { 4,  2,  4,  2,   4,  4,  4,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,  4,  2,   4,  4,  4,  4,  2};
 
-// ******* Nr. 13 Leise rieselt der Schnee **************
+// ******* Nr. 13 Leise rieselt der Schnee ************** https://www.lieder-archiv.de/leise_rieselt_der_schnee-notenblatt_200012.html
 
-  const PROGMEM uint16_t Noten_13[] = {B5,B5,A5,B5,A5,G5,PAUSE,G5,E5,G5,F5,E5,D5,PAUSE,A5,GS5,A5,C6,B5,A5,G5,PAUSE,A5,E5,E5,F5,E5,F5,G5};
-  const PROGMEM uint16_t Dauer_13[] = { 2, 4, 4, 4, 4, 2,   10, 2, 4, 4, 4, 4, 2,   10, 4,  4, 4, 4, 4, 4, 2,   10, 3, 6, 4, 4, 4, 4, 2};
+  const PROGMEM uint16_t Noten_13[] = {B5, B5, A5, B5, A5, G5, G5, PAUSE, G5, E5, G5, FS5, E5, D5, D5, PAUSE, A5, GS5, A5, C6, B5, A5, G5, G5, PAUSE, A5, A5, E5, E5, FS5, E5, FS5, G5, G5};
+  const PROGMEM uint16_t Dauer_13[] = { 2,  4,  4,  4,  4,  1,  4,     4,  2,  4,  4,   4,  4,  1,  4,     4,  4,   4,  4,  4,  4,  4,  1,  4,     4,  4,  8,  8,  4,   4,  4,   4,  1,  4};
 
 // ******* Nr. 14 Lasst uns froh und munter sein ************** https://www.lieder-archiv.de/lasst_uns_froh_und_munter_sein-notenblatt_200014.html
 
